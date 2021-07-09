@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    overflow-x:hidden;
+}
+
+/********************************************************************************Navbar*******************************************************************************/
+nav{
+    background-color:darkslateblue;
+}
+.nav-logo{
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+}
+.nav-item{
+    font-size:15px;
+    text-transform:uppercase;
+    margin:0px 5px;
+}
+.nav-link{
+    color:white !important;
+}
+.nav-link:hover, .nav-link:active{
+    color:yellow !important;
+}
+
+/*******************************************************************Home*********************************************************************************************/
+
+
+.section{
+    width:99vw;
+    height:95vh;
+    background-color:black;
+    margin-top:10px;
+    overflow-x:hidden;;
+}
+.heading{
+    font-size:40px;
+    font-weight:bold;
+}
+
+/******************************team******************************/
+#team{
+    width:99vw;
+    height:90vh;
+    background-color:pink;
+}
+/******************************life in zippy******************************/
+.life-in-zippy{
+    width:99vw;
+    height:90vh;
+    background-color:yellow;
+}
+/**********************************NewsletterSignup*********************/
+.newsletter-signup{
+    width:99vw;
+    height:50vh;
+    margin-bottom:20px;
+    background-color:blueviolet;
+}
+
+/*****************************************************BLOG********************************************************************************/
+
+#blog{
+    width:99vw;
+    height:90vh;
+    text-align:center;
+}
+
+/****image cards***/
+
+.blog-img-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.blog-img-card{
+    background-color:white;
+    text-align:center;
+    width:240px;
+    height:400px;
+    margin:25px;
+}
+.blog-button{
+   background-color:grey !important;
+   color:black !important;
+   border:none !important;
+}
+
+.blog-button:hover{
+    background-color:yellow !important;
+}
+.blog-image-card-heading ,.blog-image-card-date, .blog-image-card-desc{
+    margin-left:20px;
+    }
+.blog-image-card-heading{
+    font-size:20px;
+        font-weight:bold;
+        margin-top:10px;
+    }
+.blog-image-card-date{
+        color:grey;
+        margin-top:20px;
+        margin-bottom:20px
+    }
+
+
+/********************************************************CONTACT**************************************************************************/
+#contact{
+    width:99vw;
+    height:70vh;
+    background-color:yellow;
+}
+.image, .contact-form{
+    height:70vh;
+}
+
+/***contact-form***/
+.contact-form{
+    padding:30px 5px;
+}
+.heading{
+    font-size:40px;
+    font-weight:bold;
+}
+input{
+    width:95%;
+    height:10%;
+    margin-top:10px !important;
+    padding:0px 10px;
+    color:grey;
+    font-size:16px;
+}
+.contact-button{
+    background-color:black;
+    border:none;
+    margin:10px;
+    padding:10px;
+    color:white;
+    font-size:17px;
+}
+.contact-button:hover{
+    background-color:purple;
+}
+
+
+/*********************************************************************FOOTER****************************************************************************************/
+.footer{
+    margin-top:50px;
+}
+.col{
+  margin:30px;
+  text-align:center;
+}
+
+.footer-heading{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+/*******column 1****/
+.footer-content{
+    padding:5px;
+}
+/*****column 2******/
+.footer-icon{
+    font-size:25px;
+    margin:10px;
+}
+/******column 3*****/
+.footer-contact{
+    margin:0rem;
+    padding:0rem;
+}
