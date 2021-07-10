@@ -40,6 +40,7 @@ nav{
 .heading{
     font-size:40px;
     font-weight:bold;
+    letter-spacing:2px;
 }
 
 /******************************team******************************/
@@ -60,7 +61,37 @@ nav{
     height:50vh;
     margin-bottom:20px;
     background-color:blueviolet;
+    display:flex;
+    text-align:center;
+     align-items:center;
 }
+.newsletter-signup-content{
+    margin-top:20px;
+}
+.newsletter-signup input{
+    width: 35%;
+    margin-top: 10px !important;
+    padding: 10px 10px;
+    color: grey;
+    font-size: 20px;
+    display: inline-block;
+} 
+
+
+.newsletter-signup-button{
+    background-color: yellow;
+    border: none;
+    margin: -5px;
+    padding: 11px 30px;
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+}
+.newsletter-signup-button:hover{
+    background-color: purple;
+    color:white;
+}
+
 
 /*****************************************************BLOG********************************************************************************/
 
