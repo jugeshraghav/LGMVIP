@@ -195,6 +195,46 @@ width:50vw;
     background-color:purple !important;
     color:white !important;
 }
+/****************************************Video Projects*************/
+.video-projects{
+    width:99vw;
+    height:90vh;
+    text-align:center;
+    padding-top:50px;
+    background-color:purple;
+}
+.container1 {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    color: #333;
+    background: #419be0;
+  }
+  
+  .slick-slide {
+    text-align: center;
+    color: #419be0;
+    background: white;
+  }
+  
+  .slick-prev,.slick-next{
+    content: "<";
+      position:relative;
+      border:none;
+      background-color:rgba(63, 57, 57,0.4);
+      color:white;
+      width:50px;
+      height:50px;
+      border-radius:50%;
+  }
+  .slick-prev{
+      top:-30%;
+      left:-45%;
+  }
+  .slick-next{
+    top:-30%;
+    right:-45%;
+}
 
 /******************************team******************************/
 #team{
