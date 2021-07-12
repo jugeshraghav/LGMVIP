@@ -31,7 +31,7 @@ nav{
 
 
 .section{
-    width:99vw;
+    width:100vw;
     height:95vh;
     background-color:black;
     margin-top:10px;
@@ -44,7 +44,7 @@ nav{
 }
 
 #home{
-    width:99vw;
+    width:100vw;
     height:90vh;
     margin-top:10px;
     overflow:hidden;
@@ -81,7 +81,7 @@ nav{
 }
 /******************************ABOUT ZIPPY****************/
 #about{
-    width:99vw;
+    width:100vw;
     height:95vh;
     padding-top:30px;
     text-align:center;
@@ -167,7 +167,7 @@ width:50vw;
 }
 /***************Pricing Table***************/
 #pricing{
-    width:99vw;
+    width:100vw;
     height:90vh;
     text-align:center;
     padding-top:150px;
@@ -197,7 +197,7 @@ width:50vw;
 }
 /****************************************Video Projects*************/
 .video-projects{
-    width:99vw;
+    width:100vw;
     height:90vh;
     text-align:center;
     padding-top:50px;
@@ -238,7 +238,7 @@ width:50vw;
 
 /******************************team******************************/
 #team{
-    width:99vw;
+    width:100vw;
     height:90vh;
     text-align:center;
     padding-top:50px;
@@ -295,13 +295,13 @@ display:block;
 
 /******************************life in zippy******************************/
 .life-in-zippy{
-    width:99vw;
+    width:100vw;
     height:90vh;
     background-color:yellow;
 }
 /**********************************NewsletterSignup*********************/
 .newsletter-signup{
-    width:99vw;
+    width:100vw;
     height:50vh;
     margin-bottom:20px;
     background:url(images/newsletter-signup-image.jpg) center center/cover;
@@ -341,7 +341,7 @@ display:block;
 /*****************************************************BLOG********************************************************************************/
 
 #blog{
-    width:99vw;
+    width:100vw;
     height:90vh;
     text-align:center;
 }
@@ -350,6 +350,7 @@ display:block;
 
 .blog-img-container{
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:center;
 }
@@ -386,7 +387,7 @@ display:block;
 
 /********************************************************CONTACT**************************************************************************/
 #contact{
-    width:99vw;
+    width:100vw;
     height:70vh;
     background-color:yellow;
 }
@@ -422,7 +423,11 @@ input{
     background-color:purple;
 }
 
-
+@media  screen and (max-width:400px) {
+    .image{
+        display:none;
+    }
+}
 /*********************************************************************FOOTER****************************************************************************************/
 .footer{
     margin-top:50px;

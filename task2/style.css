@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    /* max-width:100%; */
+    /* overflow-x:hidden; */
+}
+
+/********************************************************************************Navbar*******************************************************************************/
+nav{
+    background-color:darkslateblue;
+}
+.nav-logo{
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+}
+.nav-item{
+    font-size:15px;
+    text-transform:uppercase;
+    margin:0px 5px;
+}
+.nav-link{
+    color:white !important;
+}
+.nav-link:hover, .nav-link:active{
+    color:yellow !important;
+}
+
+/***********************************************UNIVERSAL CLASSES************************************************************************************/
+.heading{
+    font-size:40px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+/*******************************************************************Home*********************************************************************************************/
+
+#home{
+    /* width:100vw; */
+    height:90vh;
+    margin-top:10px;
+    overflow:hidden;
+    background:url(images/newsletter-signup-image.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home-content{
+    width: 500px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.home-heading{
+    font-size: 50px;
+    font-weight: bold;
+}
+.btn-1{
+    text-transform:uppercase;
+    margin-top:20px;
+    background-color:yellow !important;
+}
+.btn-1:hover{
+    background-color: purple !important;
+    color:white !important;
+}
+.btn-2{
+    text-transform:uppercase;
+    margin-top:20px;
+    background-color: purple !important;
+    color:white !important;
+}
+.btn-2:hover{
+    background-color:yellow !important;
+    color:black !important;
+}
+
+/******************************ABOUT ZIPPY****************/
+#about{
+    /* width:100%; */
+    height:95vh;
+    padding:30px 20% 30px 20%;
+    text-align:center;
+}
+.starting-content, .about-ending-content{
+display:flex;
+}
+.starting-content p{
+    margin:30px 60px;
+    text-align:left;
+}
+.icon{
+    font-size:100px;
+}
+
+.about-ending-content div{
+    padding:40px;
+}
+.about-ending-content div i{
+    font-size:55px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-color:purple;
+    color:white;
+    padding-top:10px;
+}
+.about-button{
+    background-color:yellow !important;
+}
+.about-button:hover{
+    background-color:purple !important;
+    color:white !important;  
+}
+/********************Projects*****************/
+#projects{
+    text-align:center;
+}
+ .projects-container{
+    display:flex;
+}
+.project-item img{
+    width: 100%;
+    height:50%;
+}
+.project-item-heading{
+    font-size:20px;
+    font-weight:bold;
+} 
+ .project-item:nth-child(even){
+    background:yellow;
+}
+.project-item:nth-child(odd){
+    background:lightgrey;
+}
+.project-details{
+    padding:25px;
+}
+.project-item-desc{
+    text-align:left;
+    color:grey;
+    font-size:15px;
+}
+.project-button{
+    background-color:grey !important;
+}
+.project-button:hover{
+    background-color:purple !important;
+    color:white !important;
+}
+/***************Pricing Table***************/
+#pricing{
+    text-align:center;
+    padding-top:150px;
+}
+.pricing-list{
+    padding:0% 20% ;
+    display:flex;
+}
+.pricing-item{
+        margin:30px 30px 10px 30px;  
+}
+.price{
+    color:grey;
+}
+.pricing-desc{
+    padding:10px 30px;
+}
+.pricing-button{
+    background-color:yellow !important;
+}
+.pricing-button:hover{
+    background-color:purple !important;
+    color:white !important;
+}
+
+/****************************************Video Projects*************/
+#video-projects{
+   
+    text-align:center;
+    padding:50px 0px;
+    margin:100px 0px;
+    background-color:purple;
+}
+.slider-video{
+    width:600px;
+    height:500px;
+    margin:20px;
+}
+
+/*******************************media queries*******************************/
+@media only screen and (max-width: 1108px) {
+    /***about***/
+    #about{
+        padding:20px ;
+    }
+   /***projects***/
+   #projects{
+    height:100%;
+    margin:50px 0px;
+}
+.project-item{
+    padding:0px 0px 30px 0px;
+}
+.project-details{
+    padding:8px;
+}
+.project-item-desc{
+  text-align:center;;
+}
+/***pricing table***/
+.pricing-list{
+    padding:0% 10% ;
+}
+.pricing-desc{
+    padding:20px ;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*****universal classes***/
+    /* .heading{
+        font-size:30px;
+    } */
+   
+    /****home*****/
+    .home-content{
+        width: 500px;
+    }
+
+   /****projects**/
+   #projects{
+    margin:100px 0px;
+}
+.project-item{
+    padding:0px 0px 80px 0px;
+}
+/***pricing table***/
+.pricing-list{
+    padding:0% 5% ;
+}
+.pricing-desc{
+    padding:10px ;
+}
+} 
+
+@media only screen and (max-width: 600px) {
+    
+    /****home*****/
+    .home-content{
+        width:400px;
+    text-align:center;
+    left:5%;
+    }
+    .home-heading{
+        font-size: 35px;
+    }
+
+    /**about**/
+    #about{
+        padding:20px;
+    }
+        .starting-content , .about-ending-content{
+        flex-wrap:wrap; 
+        text-align:center;
+        }
+        .starting-content p{
+            margin-top:90px ;
+            padding:30px;
+            text-align:center;
+            /* width:300px; */
+        }
+        
+        .about-ending-content div{
+            padding:30px;
+            /* width:300px; */
+        }
+        .icon{
+            font-size:100px;
+            position:absolute;
+            top:98%;
+            left:220px;
+
+        }
+   /***projects**/
+   .projects-container{
+flex-wrap:wrap;
+   }
+   #projects{
+    margin:120% 0px 0px 0px;
+}
+.project-item{
+    padding:0px;
+}
+/***pricing table***/
+.pricing-list{
+    padding:0% 5% ;
+}
+.pricing-desc{
+    padding:5px ;
+}
+.pricing-button{
+font-size:15px !important;
+}
+}
+
+@media only screen and (max-width: 400px) {
+    /****home*****/
+    .home-content{
+        width: 300px;
+        text-align:center;
+        left:8%;
+    }
+    .home-heading{
+        font-size: 30px;
+    }
+    
+/******************************ABOUT ZIPPY****************/
+.starting-content p{
+    margin:100px 5px 10px 5px;
+    text-align:center;
+    width:300px;
+}
+
+.icon{
+    font-size:100px;
+    position:absolute;
+    top:108%;
+    left:120px;
+}
+  /**********projectss*************/
+  #projects{
+    margin:240% 0px 0px 0px;
+}
+/***pricing table***/
+.pricing-list{
+    padding:0% 5% ;
+    flex-wrap:wrap;
+}
+.pricing-desc{
+    padding:10px 20px ;
+}
+}
