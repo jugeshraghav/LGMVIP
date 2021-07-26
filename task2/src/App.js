@@ -1,25 +1,21 @@
 
 import {useState} from "react";
 import './App.css';
+import loader from './loading2.gif';
 
 
 function App() {
 
-    const [users, setUsers]= useState([false]);
+    const [users, setUsers]= useState([]);
 
-    function displayCards(){
-      const url = "https://reqres.in/api/users?page=1";
-      fetch(url)
-      .then((response)=>response.json())
-      .then((data)=>{
-       setUsers(data.data);
-      })
-     
+    const displayCards = async()=>{
+      const response = await fetch("https://reqres.in/api/users?page=1")
+       const jsonResponse = await response.json();
+       setUsers(jsonResponse.data);
       }
-  return (
- 
-    <div className="bodyContainer">
 
+  return (
+    <div className="bodyContainer">
 
       <div className="navbar">
         <ul>
@@ -30,12 +26,12 @@ function App() {
 
       <div className="CardContainer">
       {
-        (users.length===0)? (<h1>No Data Found</h1>) :
+        (users.length===0) ? <img src={loader} alt="loader" style={{display:"block", margin:"auto"}}></img>:
 
           users.map((user,index)=>(
                  <div className="Card" key={index}> 
                  <div >
-                     <img src={user.avatar} alt="img"></img>
+                     <img className="cardImage" src={user.avatar} alt="img"></img>
                      <div className="content">
                      <p className="name">{user.first_name} {user.last_name}</p>
                      <p>{user.email}</p>

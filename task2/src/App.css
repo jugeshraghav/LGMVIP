@@ -47,8 +47,9 @@ button:hover{
   flex-wrap:wrap;
   padding-top:20px;
   padding-bottom:20px;
-  justify-content:center;;
+  justify-content:center;
 }
+
 
 .Card{
   background-color:white;
@@ -56,11 +57,46 @@ button:hover{
   margin:10px;
   text-align:center;
   border-radius:40px;
+  visibility:hidden;
+  animation:cardAnimation;
+  animation-duration:2s;
+animation-delay:1s;
+animation-fill-mode:forwards;
 }
-img{
+@keyframes cardAnimation {
+  0%{
+position:relative;
+top:-1000px;
+visibility:visible;
+  }
+  100%{
+    position:relative;
+    top:0px;
+    visibility:visible;
+  }
+}
+
+.cardImage{
   width:150px;
   height:150px;
   border-radius:50%;
+  visibility:hidden;
+  animation:imgAnimation;
+  animation-duration:3s;
+  animation-delay:3s;
+  animation-fill-mode:forwards;
+}
+@keyframes imgAnimation {
+  0%{
+position:relative;
+top:-1000px;
+visibility:visible;
+  }
+  100%{
+    position:relative;
+    top:0px;
+    visibility:visible;
+  }
 }
 p{
   font-size:20px;
@@ -76,6 +112,22 @@ p{
   border-radius:20px;
   box-shadow:4px 5px 5px white;
   padding:0.4px 0px;
+  visibility:hidden;
+  animation:contentAnimation 3s linear 1;;
+  animation-delay:6s;
+  animation-fill-mode:forwards;
+}
+@keyframes contentAnimation {
+  0%{
+position:relative;
+left:-1000px;
+visibility:visible;
+  }
+  100%{
+    position:relative;
+    left:0px;
+    visibility:visible;
+  }
 }
 
 
