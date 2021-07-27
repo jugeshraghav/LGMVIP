@@ -37,7 +37,6 @@ nav{
 /*******************************************************************Home**************************************************************************/
 
 #home{
-    /* width:100vw; */
     height:90vh;
     margin-top:10px;
     overflow:hidden;
@@ -56,6 +55,7 @@ nav{
 .home-heading{
     font-size: 50px;
     font-weight: bold;
+    text-shadow:2px 2px white;
 }
 .btn-1{
     text-transform:uppercase;
@@ -268,9 +268,16 @@ color:white;
 .slide1{
     height:50vh;
 }
-
+.slide1 img{
+    height:50vh;
+    width:100%;
+}
 .slide2{
     height:20vh;
+}
+.slide2 img{
+    height:20vh;
+    width:100%;
 }
 
 /**************************************************************NewsletterSignup**************************************************************/
