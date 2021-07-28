@@ -193,7 +193,7 @@ display:flex;
 #video-projects .slider .slider-video {
 height:100vh;
 }
-#video-projects .slider .slider-video img{
+#video-projects .slider .slider-video iframe{
     height: 50%;
     width:95%;
 }
@@ -230,7 +230,7 @@ display:none;
 }
 .team-member-icons i{
     font-size:25px;
-    margin-top: 33px;
+    margin-top: 10px;
     padding-top:8px;
     width:40px;
     height:40px;
